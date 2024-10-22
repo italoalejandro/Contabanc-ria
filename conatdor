@@ -1,0 +1,20 @@
+# Programa que conta quantas vogais uma palavra possui
+
+# Lê a palavra do usuário
+texto = input('Digite uma palavra: ')
+vogais = 0
+vogais_encontradas = []
+
+# Conjunto de vogais, tanto maiúsculas quanto minúsculas
+VOGAIS = 'AEIOUaeiou'
+
+# Loop para contar as vogais e armazená-las
+for letra in texto:
+    if letra in VOGAIS:
+        vogais += 1
+        vogais_encontradas.append(letra)
+
+# Exibe o resultado
+print(f'A palavra "{texto}" possui {vogais} vogais.')
+
+print("As vogais encontradas são:", ''.join(vogais_encontradas))
